@@ -1,7 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
-function App() {
+/* function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -20,6 +20,31 @@ function App() {
       </header>
     </div>
   );
-}
+} */
 
-export default App;
+// export default App;
+
+import React, { useState } from "react";
+
+const AnotherApp = () => {
+  const [count, setCount] = useState(0);
+
+  const increment = () => {
+    setCount(count + 1);
+  };
+
+  const decrement = () => {
+    setCount(count - 1);
+  };
+
+  return (
+    <div className="container">
+      <h1>Another App</h1>
+      <p>Count: {count}</p>
+      <button onClick={increment}>Increment</button>
+      <button onClick={decrement}>Decrement</button>
+    </div>
+  );
+};
+
+export default AnotherApp;
