@@ -24,7 +24,7 @@ import "./App.css";
 
 // export default App;
 
-import React, { useState } from "react";
+/* import React, { useState } from "react";
 
 const AnotherApp = () => {
   const [count, setCount] = useState(0);
@@ -48,3 +48,4 @@ const AnotherApp = () => {
 };
 
 export default AnotherApp;
+ */
