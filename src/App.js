@@ -77,7 +77,7 @@ const HomePage = () => {
         </section>
         <section className="cta-section">
           <h2>Start Your Consultation Today</h2>
-          <a href="/signup" className="btn-primary">
+          <a href="./SignUp.js" className="btn-primary">
             Sign Up
           </a>
           <p>
