@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import "./App.css";
 
 const App = () => {
@@ -42,6 +42,21 @@ const App = () => {
       <footer className="footer">
         <p>&copy; 2023 Doctor Consult. All rights reserved.</p>
       </footer>
+    </div>
+  );
+};
+
+export default App;
+ */
+
+import React from "react";
+
+const App = () => {
+  return (
+    <div>
+      <h2>Welcome to QuickCare - Doctor Consultation App</h2>
+      <p>Find and consult with expert doctors online.</p>
+      <button>Get Started</button>
     </div>
   );
 };
