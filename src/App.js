@@ -1,63 +1,50 @@
-/* import React from "react";
-import "./App.css";
-
-const App = () => {
-  return (
-    <div className="home-page">
-      <header className="header">
-        <h1>Welcome to Doctor Consult</h1>
-        <p>Get expert medical advice from the comfort of your home.</p>
-      </header>
-      <main className="main-content">
-        <section className="feature-section">
-          <div className="feature">
-            <img src="/images/feature1.png" alt="Find a Doctor" />
-            <h2>Find a Doctor</h2>
-            <p>
-              Browse and search for doctors based on their specialty and
-              location.
-            </p>
-          </div>
-          <div className="feature">
-            <img src="/images/feature2.png" alt="Book Appointment" />
-            <h2>Book Appointment</h2>
-            <p>Schedule a convenient appointment with your chosen doctor.</p>
-          </div>
-          <div className="feature">
-            <img src="/images/feature3.png" alt="Virtual Consultation" />
-            <h2>Virtual Consultation</h2>
-            <p>Have a video or chat consultation with your doctor.</p>
-          </div>
-        </section>
-        <section className="cta-section">
-          <h2>Start Your Consultation Today</h2>
-          <a href="/signup" className="btn-primary">
-            Sign Up
-          </a>
-          <p>
-            Already have an account? <a href="/login">Log In</a>
-          </p>
-        </section>
-      </main>
-      <footer className="footer">
-        <p>&copy; 2023 Doctor Consult. All rights reserved.</p>
-      </footer>
-    </div>
-  );
-};
-
-export default App;
- */
-
 import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Switch as RouterSwitch } from "react-router";
+
+import LoginPage from "./LoginPage";
+import SignupPage from "./SignupPage";
+import Homepage from "./Homepage";
+import UserDashboard from "./UserDashboard";
+import DoctorProfile from "./DoctorProfile";
+import BookAppointment from "./BookAppointment";
+import Notification from "./Notification";
 
 const App = () => {
   return (
-    <div>
-      <h2>Welcome to QuickCare - Doctor Consultation App</h2>
-      <p>Find and consult with expert doctors online.</p>
-      <button>Get Started</button>
-    </div>
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/dashboard">Dashboard</Link>
+            </li>
+            <li>
+              <Link to="/doctors">Find Doctors</Link>
+            </li>
+            <li>
+              <Link to="/appointments">Book Appointment</Link>
+            </li>
+            <li>
+              <Link to="/notifications">Notifications</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <RouterSwitch>
+          <Route exact path="/" component={Homepage} />
+          <Route path="/dashboard" component={UserDashboard} />
+          <Route path="/doctors" component={DoctorProfile} />
+          <Route path="/appointments" component={BookAppointment} />
+          <Route path="/notifications" component={Notification} />
+          <Route path="/login" component={LoginPage} />
+          <Route path="/signup" component={SignupPage} />
+        </RouterSwitch>
+      </div>
+    </Router>
   );
 };
 
