@@ -39,8 +39,6 @@ body {
 /* Navbar CSS */
 .navbar {
   background-color: #ba85eb;
-  /* background-color: #956952; */
-  /* Lemon green color */
   padding: 10px;
 }
 
@@ -60,6 +58,7 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
+
 .navbar li:hover {
   background-color: #a85eee;
   color: #000;
@@ -75,6 +74,7 @@ body {
 .route-content {
   margin-top: 20px;
 }
+
 /* End of Navbar CSS */
 
 .dashboard-container {
@@ -116,4 +116,190 @@ body {
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 4px;
+}
+
+/* Login CSS */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  align-items: left;
+}
+
+.login-form label {
+  margin-bottom: 5px;
+  justify-content: left;
+  justify-content: center;
+}
+
+.login-form input {
+  padding: 8px 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-form button {
+  font-family: "Lucida Sans Regular";
+  padding: 8px 12px;
+  font-size: 16px;
+
+  background-color: #ba85eb;
+
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #a85eee;
+}
+
+.login-form p {
+  margin-top: 10px;
+}
+
+.login-form p a {
+  color: #8308f6;
+  text-decoration: none;
+}
+
+.login-form p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 600px) {
+  .homepage-container {
+    padding: 10px;
+  }
+
+  .homepage-title {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .homepage-description {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .homepage-button {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .navbar li {
+    margin: 0 5px;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .dashboard-container {
+    margin: 10px;
+  }
+
+  .dashboard-heading {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .dashboard-section-heading {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .login-heading {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .login-form {
+    max-width: 250px;
+  }
+
+  .login-form input {
+    padding: 6px 12px;
+    margin-bottom: 8px;
+  }
+
+  .login-form button {
+    font-family: "Lucida Sans Regular";
+    padding: 6px 10px;
+    background-color: #ba85eb;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .homepage-container {
+    padding: 8px;
+  }
+
+  .homepage-title {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  .homepage-description {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  .homepage-button {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .navbar li {
+    margin: 0 3px;
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .dashboard-container {
+    margin: 8px;
+  }
+
+  .dashboard-heading {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  .dashboard-section-heading {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .login-heading {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  .login-form {
+    max-width: 200px;
+  }
+
+  .login-form input {
+    padding: 4px 8px;
+    margin-bottom: 6px;
+  }
+
+  .login-form button {
+    font-family: "Lucida Sans Regular";
+    padding: 4px 6px;
+  }
 }
