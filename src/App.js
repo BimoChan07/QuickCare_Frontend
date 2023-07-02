@@ -31,6 +31,9 @@ const App = () => {
             <li>
               <Link to="/notifications">Notifications</Link>
             </li>
+            <li>
+              <Link to="/login">Login</Link>
+            </li>
           </ul>
         </nav>
         <div className="route-content">
