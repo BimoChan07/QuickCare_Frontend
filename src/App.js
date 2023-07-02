@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import "./App.css";
 
 import LoginPage from "./LoginPage";
 import SignupPage from "./SignupPage";
@@ -13,7 +14,7 @@ const App = () => {
   return (
     <Router>
       <div>
-        <nav>
+        <nav className="navbar">
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -32,15 +33,17 @@ const App = () => {
             </li>
           </ul>
         </nav>
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/dashboard" element={<UserDashboard />} />
-          <Route path="/doctors" element={<DoctorProfile />} />
-          <Route path="/appointments" element={<BookAppointment />} />
-          <Route path="/notifications" element={<Notification />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/signup" element={<SignupPage />} />
-        </Routes>
+        <div className="route-content">
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/dashboard" element={<UserDashboard />} />
+            <Route path="/doctors" element={<DoctorProfile />} />
+            <Route path="/appointments" element={<BookAppointment />} />
+            <Route path="/notifications" element={<Notification />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/signup" element={<SignupPage />} />
+          </Routes>
+        </div>
       </div>
     </Router>
   );
