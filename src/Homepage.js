@@ -7,7 +7,7 @@ const Homepage = () => {
         Welcome to QuickCare - Doctor Consultation App
       </h2>
       <p className="homepage-description">
-        Find and consult with expert doctors online.
+        Find and consult with expert doctors.
       </p>
       <button className="homepage-button">Get Started</button>
     </div>
