@@ -3,6 +3,8 @@ body {
   padding: 0;
   font-family: "Lucida Sans Regular";
 }
+
+/* Homepage CSS */
 .homepage-container {
   text-align: center;
   padding: 20px;
@@ -34,6 +36,7 @@ body {
   color: #000;
 }
 
+/* Navbar CSS */
 .navbar {
   background-color: #ba85eb;
   /* background-color: #956952; */
@@ -71,4 +74,46 @@ body {
 
 .route-content {
   margin-top: 20px;
+}
+/* End of Navbar CSS */
+
+.dashboard-container {
+  margin: 20px;
+}
+
+.dashboard-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.dashboard-section {
+  margin-bottom: 20px;
+}
+
+.dashboard-section-heading {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Optional: Styling for the list of upcoming appointments */
+.appointments-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.appointment-item {
+  margin-bottom: 10px;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Optional: Styling for profile information and payment management */
+.profile-info,
+.payment-info {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
 }
