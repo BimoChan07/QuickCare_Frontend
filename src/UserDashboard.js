@@ -2,19 +2,30 @@ import React from "react";
 
 const UserDashboard = () => {
   return (
-    <div>
-      <h2>User Dashboard</h2>
-      <div>
-        <h3>Upcoming Appointments</h3>
-        {/* Render a list of upcoming appointments */}
+    <div className="dashboard-container">
+      <h2 className="dashboard-heading">User Dashboard</h2>
+      <div className="dashboard-section">
+        <h3 className="dashboard-section-heading">Upcoming Appointments</h3>
+        <ul className="appointments-list">
+          {/* Render a list of upcoming appointments */}
+          <li className="appointment-item">Appointment 1 - Date and Time</li>
+          <li className="appointment-item">Appointment 2 - Date and Time</li>
+          <li className="appointment-item">Appointment 3 - Date and Time</li>
+        </ul>
       </div>
-      <div>
-        <h3>Profile Management</h3>
-        {/* Display profile information and allow users to update */}
+      <div className="dashboard-section">
+        <h3 className="dashboard-section-heading">Profile Management</h3>
+        <div className="profile-info">
+          {/* Display profile information and allow users to update */}
+          Profile Information
+        </div>
       </div>
-      <div>
-        <h3>Payment Management</h3>
-        {/* Display payment methods and transaction history */}
+      <div className="dashboard-section">
+        <h3 className="dashboard-section-heading">Payment Management</h3>
+        <div className="payment-info">
+          {/* Display payment methods and transaction history */}
+          Payment Information
+        </div>
       </div>
     </div>
   );
