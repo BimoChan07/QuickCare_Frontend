@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const LoginPage = () => {
-  const [email, setEmail] = useState("");
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
+  const handleUsernameChange = (e) => {
+    setUsername(e.target.value);
   };
 
   const handlePasswordChange = (e) => {
@@ -16,29 +16,31 @@ const LoginPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Perform login logic here, such as sending a request to the server
-    console.log("Email:", email);
+    console.log("Username:", username);
     console.log("Password:", password);
     // Reset form fields
-    setEmail("");
+    setUsername("");
     setPassword("");
   };
 
   return (
-    <div>
-      <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
+    <div className="login-container">
+      <h2 className="login-heading">Login</h2>
+      <form className="login-form" onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="username">Username:</label>
+          <br />
           <input
-            type="email"
-            id="email"
-            value={email}
-            onChange={handleEmailChange}
+            type="username"
+            id="username"
+            value={username}
+            onChange={handleUsernameChange}
             required
           />
         </div>
         <div>
           <label htmlFor="password">Password:</label>
+          <br />
           <input
             type="password"
             id="password"
