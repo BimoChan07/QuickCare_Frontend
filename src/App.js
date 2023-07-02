@@ -1,6 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { Switch as RouterSwitch } from "react-router";
+import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 
 import LoginPage from "./LoginPage";
 import SignupPage from "./SignupPage";
@@ -33,16 +32,15 @@ const App = () => {
             </li>
           </ul>
         </nav>
-
-        <RouterSwitch>
-          <Route exact path="/" component={Homepage} />
-          <Route path="/dashboard" component={UserDashboard} />
-          <Route path="/doctors" component={DoctorProfile} />
-          <Route path="/appointments" component={BookAppointment} />
-          <Route path="/notifications" component={Notification} />
-          <Route path="/login" component={LoginPage} />
-          <Route path="/signup" component={SignupPage} />
-        </RouterSwitch>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/dashboard" element={<UserDashboard />} />
+          <Route path="/doctors" element={<DoctorProfile />} />
+          <Route path="/appointments" element={<BookAppointment />} />
+          <Route path="/notifications" element={<Notification />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignupPage />} />
+        </Routes>
       </div>
     </Router>
   );
