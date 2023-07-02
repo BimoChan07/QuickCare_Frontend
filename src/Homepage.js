@@ -2,10 +2,14 @@ import React from "react";
 
 const Homepage = () => {
   return (
-    <div>
-      <h2>Welcome to QuickCare - Doctor Consultation App</h2>
-      <p>Find and consult with expert doctors online.</p>
-      <button>Get Started</button>
+    <div className="homepage-container">
+      <h2 className="homepage-title">
+        Welcome to QuickCare - Doctor Consultation App
+      </h2>
+      <p className="homepage-description">
+        Find and consult with expert doctors online.
+      </p>
+      <button className="homepage-button">Get Started</button>
     </div>
   );
 };
