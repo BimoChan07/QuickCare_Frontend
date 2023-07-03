@@ -30,9 +30,9 @@ const AppointmentBookingPage = () => {
   };
 
   return (
-    <div>
-      <h2>Appointment Booking</h2>
-      <form onSubmit={handleSubmit}>
+    <div className="booking-container">
+      <h2 className="booking-heading">Appointment Booking</h2>
+      <form className="bookingForm" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="doctor">Doctor:</label>
           <select
@@ -42,9 +42,9 @@ const AppointmentBookingPage = () => {
             required
           >
             <option value="">Select a doctor</option>
-            <option value="Dr. John Doe">Dr. John Doe</option>
-            <option value="Dr. Jane Smith">Dr. Jane Smith</option>
-            <option value="Dr. Michael Johnson">Dr. Michael Johnson</option>
+            <option value="Dr. Neha Bajimaya">Dr. Neha Bajimaya</option>
+            <option value="Dr. Nidhi Bajimaya">Dr. Nidhi Bajimaya</option>
+            <option value="Dr. Bhola Rijal">Dr. Bhola Rijal</option>
           </select>
         </div>
         <div>
