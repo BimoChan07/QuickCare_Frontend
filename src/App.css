@@ -78,7 +78,11 @@ body {
 /* End of Navbar CSS */
 
 .dashboard-container {
-  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .dashboard-heading {
@@ -208,7 +212,11 @@ body {
   }
 
   .dashboard-container {
-    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   .dashboard-heading {
@@ -269,7 +277,11 @@ body {
   }
 
   .dashboard-container {
-    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   .dashboard-heading {
