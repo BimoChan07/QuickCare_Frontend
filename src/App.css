@@ -348,3 +348,39 @@ input[type="time"] {
 .bookingForm button:hover {
   background-color: #a85eee;
 }
+
+.notification-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.notification-container h2 {
+  margin-bottom: 20px;
+}
+
+.notification-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.notification-container li {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.unread {
+  font-weight: bold;
+}
+
+.notification-container button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
