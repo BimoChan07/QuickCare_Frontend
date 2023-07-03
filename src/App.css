@@ -306,6 +306,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .booking-heading {
@@ -317,13 +318,13 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 300px;
-  align-items: left;
+  align-items: left; /* Change align-items to 'left' */
 }
 
 .bookingForm label {
   margin-bottom: 5px;
   margin-right: 5px;
-  justify-content: center;
+  justify-content: left; /* Change justify-content to 'left' */
 }
 
 .bookingForm select,
@@ -333,6 +334,7 @@ input[type="time"] {
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  text-align: left; /* Add 'text-align: left' to align text within the input fields to the left */
 }
 
 .bookingForm button {
@@ -344,20 +346,23 @@ input[type="time"] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin: 0 auto; /* Add this line to center align the button */
 }
 .bookingForm button:hover {
   background-color: #a85eee;
 }
 
 .notification-container {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Added text-align property to center align the button */
 }
 
 .notification-container h2 {
-  margin-bottom: 20px;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .notification-container ul {
@@ -377,10 +382,17 @@ input[type="time"] {
 }
 
 .notification-container button {
-  padding: 5px 10px;
-  background-color: #007bff;
-  color: #fff;
+  font-family: "Lucida Sans Regular";
+  padding: 8px 12px;
+  font-size: 16px;
+  background-color: #ba85eb;
+  color: #000;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin: 0 auto; /* Added margin property to center align the button */
+}
+
+.notification-container button:hover {
+  background-color: #a85eee;
 }
