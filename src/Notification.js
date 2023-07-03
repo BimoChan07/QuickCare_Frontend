@@ -27,7 +27,7 @@ const NotificationsPage = () => {
   };
 
   return (
-    <div>
+    <div className="notification-container">
       <h2>Notifications</h2>
       {notifications.length > 0 ? (
         <ul>
