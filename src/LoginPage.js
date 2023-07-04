@@ -15,7 +15,6 @@ const LoginPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Perform login logic here, such as sending a request to the server
     console.log("Username:", username);
     console.log("Password:", password);
     // Reset form fields
