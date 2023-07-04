@@ -336,13 +336,13 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 300px;
-  align-items: left; /* Change align-items to 'left' */
+  align-items: left;
 }
 
 .bookingForm label {
   margin-bottom: 5px;
   margin-right: 5px;
-  justify-content: left; /* Change justify-content to 'left' */
+  justify-content: left;
 }
 
 .bookingForm select,
