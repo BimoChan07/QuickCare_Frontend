@@ -19,7 +19,6 @@ const SignupPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Perform signup logic here, such as sending a request to the server
     console.log("Name:", name);
     console.log("Email:", email);
     console.log("Password:", password);
