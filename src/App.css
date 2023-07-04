@@ -352,7 +352,7 @@ input[type="time"] {
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  text-align: left; /* Add 'text-align: left' to align text within the input fields to the left */
+  text-align: left;
 }
 
 .bookingForm button {
