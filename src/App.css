@@ -376,7 +376,7 @@ input[type="time"] {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center; /* Added text-align property to center align the button */
+  text-align: center;
 }
 
 .notification-container h2 {
