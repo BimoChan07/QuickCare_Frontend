@@ -5,17 +5,17 @@ const NotificationsPage = () => {
     {
       id: 1,
       title: "New Appointment",
-      content: "You have a new appointment with Dr. John Doe.",
+      content: "You have a new appointment with Dr. Neha Bajimaya.",
     },
     {
       id: 2,
       title: "Payment Received",
-      content: "Payment of $100 has been received.",
+      content: "Payment of Rs. 1000 has been received.",
     },
     {
       id: 3,
       title: "Reminder",
-      content: "Don't forget your upcoming appointment tomorrow.",
+      content: "Don't forget your upcoming appointment on coming Sunday.",
     },
   ]);
 
