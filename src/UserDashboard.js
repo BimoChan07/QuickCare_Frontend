@@ -22,10 +22,7 @@ const UserDashboard = () => {
       </div>
       <div className="dashboard-section">
         <h3 className="dashboard-section-heading">Payment Management</h3>
-        <div className="payment-info">
-          {/* Display payment methods and transaction history */}
-          Payment Information
-        </div>
+        <div className="payment-info">Payment Information</div>
       </div>
     </div>
   );
