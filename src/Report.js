@@ -9,7 +9,6 @@ const ReportGenerator = () => {
   };
 
   const handleGenerateReport = () => {
-    // Perform report generation logic here based on the reportData
     const generatedReport = `Report generated with data: ${reportData}`;
     setGeneratedReport(generatedReport);
   };
