@@ -15,10 +15,7 @@ const UserDashboard = () => {
       </div>
       <div className="dashboard-section">
         <h3 className="dashboard-section-heading">Profile Management</h3>
-        <div className="profile-info">
-          {/* Display profile information and allow users to update */}
-          Profile Information
-        </div>
+        <div className="profile-info">Profile Information</div>
       </div>
       <div className="dashboard-section">
         <h3 className="dashboard-section-heading">Payment Management</h3>
