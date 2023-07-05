@@ -10,15 +10,14 @@ const DoctorSearchPage = () => {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    // Perform search logic here, such as sending a request to the server
+
     console.log("Search Query:", searchQuery);
     // Reset search query
     setSearchQuery("");
-    // Set dummy doctor data (replace with actual data from server)
     setDoctors([
-      { id: 1, name: "Dr. John Doe", specialization: "Cardiology" },
-      { id: 2, name: "Dr. Jane Smith", specialization: "Dermatology" },
-      { id: 3, name: "Dr. Michael Johnson", specialization: "Orthopedics" },
+      { id: 1, name: "Dr. Neha Bajimaya", specialization: "Cardiology" },
+      { id: 2, name: "Dr. Nidhi Bajimaya", specialization: "MBBS" },
+      { id: 3, name: "Dr. Nischal Khadka", specialization: "Orthopedics" },
     ]);
   };
 
