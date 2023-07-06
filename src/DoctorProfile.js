@@ -22,7 +22,7 @@ const DoctorSearchPage = () => {
   };
 
   return (
-    <div>
+    <div className="doctor-page">
       <h2>Doctor Profiles/Search</h2>
       <form onSubmit={handleSearch}>
         <input
@@ -37,7 +37,7 @@ const DoctorSearchPage = () => {
       <div>
         {doctors.length > 0 ? (
           doctors.map((doctor) => (
-            <div key={doctor.id}>
+            <div className="doctor-card" key={doctor.id}>
               <h3>{doctor.name}</h3>
               <p>Specialization: {doctor.specialization}</p>
             </div>
