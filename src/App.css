@@ -470,3 +470,64 @@ h3 {
 p {
   color: #777;
 }
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  align-items: left;
+}
+
+.signup-form label {
+  margin-bottom: 5px;
+  justify-content: left;
+  justify-content: center;
+}
+
+.signup-form input {
+  padding: 8px 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.signup-form button {
+  font-family: "Lucida Sans Regular";
+  padding: 8px 12px;
+  font-size: 16px;
+  background-color: #ba85eb;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: #a85eee;
+}
+
+.signup-form p {
+  margin-top: 10px;
+}
+
+.signup-form p a {
+  color: #8308f6;
+  text-decoration: none;
+}
+
+.signup-form p a:hover {
+  text-decoration: underline;
+}
