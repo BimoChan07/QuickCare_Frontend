@@ -47,9 +47,9 @@ const SignupPage = () => {
           <br />
           <input
             type="text"
-            id="email"
-            value={email}
-            onChange={handleEmailChange}
+            id="name"
+            value={name}
+            onChange={handleNameChange}
             required
           />
         </div>
