@@ -18,6 +18,7 @@ const DoctorSearchPage = () => {
       { id: 1, name: "Dr. Neha Bajimaya", specialization: "Cardiology" },
       { id: 2, name: "Dr. Nidhi Bajimaya", specialization: "MBBS" },
       { id: 3, name: "Dr. Nischal Khadka", specialization: "Orthopedics" },
+      { id: 4, name: "Dr. Darshan Shrestha", specialization: "MBBS" },
     ]);
   };
 
