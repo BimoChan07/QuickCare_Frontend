@@ -28,9 +28,9 @@ const SignupPage = () => {
   };
 
   return (
-    <div className="login-container">
-      <h2 className="login-heading">Sign Up</h2>
-      <form className="login-form" onSubmit={handleSubmit}>
+    <div className="signup-container">
+      <h2 className="signup-heading">Sign Up</h2>
+      <form className="signup-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
           <br />
