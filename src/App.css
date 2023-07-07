@@ -154,7 +154,11 @@ body {
 
 .login-form button {
   font-family: "Lucida Sans Regular";
-  padding: 8px 12px;
+  display: auto;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 15px;
   font-size: 16px;
   background-color: #ba85eb;
   color: #000;
@@ -481,6 +485,8 @@ p {
 .signup-heading {
   font-size: 24px;
   margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .signup-form {
