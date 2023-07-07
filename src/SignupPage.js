@@ -31,7 +31,7 @@ const SignupPage = () => {
     <div className="signup-container">
       <h2 className="signup-heading">Sign Up</h2>
       <form className="signup-form" onSubmit={handleSubmit}>
-        <div>
+        {/*  <div>
           <label htmlFor="name">Name:</label>
           <br />
           <input
@@ -39,6 +39,17 @@ const SignupPage = () => {
             id="name"
             value={name}
             onChange={handleNameChange}
+            required
+          />
+        </div> */}
+        <div>
+          <label htmlFor="name">Name:</label>
+          <br />
+          <input
+            type="text"
+            id="email"
+            value={email}
+            onChange={handleEmailChange}
             required
           />
         </div>
