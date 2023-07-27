@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import axios from "axios";
 const LoginPage = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -13,10 +13,17 @@ const LoginPage = () => {
     setPassword(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+   const handleSubmit = async(e) => {
     e.preventDefault();
-    console.log("Username:", username);
-    console.log("Password:", password);
+try{
+const res =  await axios.post("/user/login", {username, password})
+console.log("response from the backend",res)
+}
+catch(error){
+console.log("Error",error)
+}
+    // console.log("Username:", username);
+    // console.log("Password:", password);
     // Reset form fields
     setUsername("");
     setPassword("");
