@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 const LoginPage = () => {
-const navigate = useNavigate();
-  const [email, setUsername] = useState("");
+  const navigate = useNavigate();
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
   const handleUsernameChange = (e) => {
@@ -15,40 +15,41 @@ const navigate = useNavigate();
     setPassword(e.target.value);
   };
 
-   const handleSubmit = async(e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-try{
-const res =  await axios.post("http://localhost:4000/user/login", {email, password})
-console.log("response from the backend",res)
-navigate("/")
-}
-catch(error){
-console.log("Error",error)
-}
-
+    try {
+      const res = await axios.post("http://localhost:4000/user/login", {
+        username,
+        password,
+      });
+      console.log("response from the backend", res);
+      navigate("/");
+    } catch (error) {
+      console.log("Error", error);
+    }
   };
 
   return (
     <div className="login-container">
-      <h2 className="login-heading">Login</h2>
       <form className="login-form" onSubmit={handleSubmit}>
+        <h2 className="login-heading">Login</h2>
         <div>
-          <label htmlFor="username">Email:</label>
-          <br />
+          <label htmlFor="username">Username:</label>
           <input
-            type="email"
-            id="email"
-            value={email}
+            type="text"
+            id="username"
+            width={100}
+            value={username}
             onChange={handleUsernameChange}
             required
           />
         </div>
         <div>
           <label htmlFor="password">Password:</label>
-          <br />
           <input
             type="password"
             id="password"
+            width={100}
             value={password}
             onChange={handlePasswordChange}
             required
