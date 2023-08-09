@@ -15,6 +15,14 @@ const App = () => {
     <Router>
       <div>
         <nav className="navbar">
+          <div className="logo-container">
+            <img
+              src="quickcare-logo.png"
+              alt="QuickCare Logo"
+              className="logo"
+            />
+            <span className="brand-name">QuickCare</span>
+          </div>
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -31,8 +39,8 @@ const App = () => {
             <li>
               <Link to="/notifications">Notifications</Link>
             </li>
-            
-           <li>
+
+            <li>
               <Link to="/login">Login</Link>
             </li>
           </ul>
