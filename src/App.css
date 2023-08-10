@@ -350,8 +350,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  /* justify-content: center; */
+  /* text-align: center; */
 }
 
 .booking-heading {
@@ -381,7 +381,9 @@ input[type="time"] {
   border-radius: 4px;
   text-align: left;
 }
-
+.bookingForm input[type="text"] {
+  width: 85%;
+}
 .bookingForm button {
   font-family: "Lucida Sans Regular";
   padding: 8px 12px;
